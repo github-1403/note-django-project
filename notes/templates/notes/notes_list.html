@@ -8,6 +8,11 @@
     <title>Document</title>
 </head>
 <body>
-notes list
+    {% for note in notes_list %}
+        <h3> {{ note.author }}</h3>
+        <p>{{ note.text }}</p>
+        <p>---------------------------------------------------------------</p>
+    {% endfor %}
+
 </body>
 </html>
